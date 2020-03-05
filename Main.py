@@ -210,10 +210,10 @@ if __name__ == '__main__':
                     x = p1Hand.pop()
                     cards.append(x)
                 while p2Hand:
-                    x = p2Hand.pop();
+                    p2Hand.pop();
                     cards.append(x)
                 while p3Hand:
-                    x = p3Hand.pop();
+                    p3Hand.pop();
                     cards.append(x)
                 win = 1
                 winner = True
