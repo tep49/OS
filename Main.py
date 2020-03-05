@@ -207,10 +207,13 @@ if __name__ == '__main__':
             log.write("\n\n")
             if winner == False:
                 while p1Hand:
-                    p1Hand.pop();
+                    x = p1Hand.pop()
+                    cards.append(x)
                 while p2Hand:
-                    p2Hand.pop();
+                    x = p2Hand.pop();
+                    cards.append(x)
                 while p3Hand:
-                    p3Hand.pop();
+                    x = p3Hand.pop();
+                    cards.append(x)
                 win = 1
                 winner = True
