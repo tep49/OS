@@ -40,6 +40,9 @@ def player1(cards, log, roundNum,hand):
             log.write("\n\nPlayer 1 wins and exits\n\n")
             global winner                                      #Grabs global winner flag
             winner = False                                      #Sets flag
+            z = random.randrange(0,2)
+            cards.append(hand[z])
+            hand.pop(z)
         else:
             z = random.randrange(0,1)
             cards.append(hand[z])
@@ -72,6 +75,9 @@ def player2(cards, log, roundNum, hand):
             log.write("\n\nPlayer 2 wins and exits\n\n")
             global winner                                       #Grabs global winner flag
             winner = False                                      #Sets flag
+            z = random.randrange(0,2)
+            cards.append(hand[z])
+            hand.pop(z)
         else:
             z = random.randrange(0,1)
             cards.append(hand[z])
@@ -104,6 +110,9 @@ def player3(cards, log, roundNum, hand):
             log.write("\n\nPlayer 3 wins and exits\n\n")
             global winner                                       #Grabs global winner flag
             winner = False                                      #Sets flag
+            z = random.randrange(0,2)
+            cards.append(hand[z])
+            hand.pop(z)
 
         else:
             z = random.randrange(0,1)
@@ -120,8 +129,6 @@ if __name__ == '__main__':
 
     log = open("Logs.txt", "w")
 
-    win = 5
-
     p1Hand = []
     p2Hand = []
     p3Hand = []
@@ -133,9 +140,10 @@ if __name__ == '__main__':
         while dealerThread.isAlive():   #Waits to give dealer thread time before starting game
             print("Awaiting Dealer Thread")
 
+        win = 0
         roundNum = 0
 #       Currently have it set to loop a few times just to check output, will change to while win == 0 to loop until a thread wins
-        while win >= 0:
+        while win == 0:
 #           Should probably make this part better VVVVVVVV
             if i == 0:
                 if winner:  #Checks if flag set, if not player plays
@@ -147,31 +155,33 @@ if __name__ == '__main__':
                 if winner:  #Checks if flag set, if not player plays
                     p3Thread = threading.Thread(group=None, target=player3, name='player3', args=(cards,log,roundNum,p3Hand,))
                     p3Thread.start()
-                if not winner:
-                    win = 0
+                #if winner:
+                    #i += 1
 
-#            if i == 1:
-#                p2Thread = threading.Thread(group=None, target=player2, name='player2', args=(cards,log,roundNum,p2Hand,))
-#                p2Thread.start()
-#                p3Thread = threading.Thread(group=None, target=player3, name='player3', args=(cards,log,roundNum,p3Hand,))
-#                p3Thread.start()
-#                p1Thread = threading.Thread(group=None, target=player1, name='player1', args=(cards,log,roundNum,p1Hand,))
- #               p1Thread.start()
-  #          if i == 2:
-   #             p3Thread = threading.Thread(group=None, target=player3, name='player3', args=(cards,log,roundNum,p3Hand,))
-    #            p3Thread.start()
-     #            p1Thread = threading.Thread(group=None, target=player1, name='player1', args=(cards,log,roundNum,p1Hand,))
-      #          p1Thread.start()
-       #         p2Thread = threading.Thread(group=None, target=player2, name='player2', args=(cards,log,roundNum,p2Hand,))
-        #        p2Thread.start()
-         #       player1
+            if i == 1:
+                 p2Thread = threading.Thread(group=None, target=player2, name='player2', args=(cards,log,roundNum,p2Hand,))
+                 p2Thread.start()
+                 p3Thread = threading.Thread(group=None, target=player3, name='player3', args=(cards,log,roundNum,p3Hand,))
+                 p3Thread.start()
+                 p1Thread = threading.Thread(group=None, target=player1, name='player1', args=(cards,log,roundNum,p1Hand,))
+                 p1Thread.start()
+            if i == 2:
+                 p3Thread = threading.Thread(group=None, target=player3, name='player3', args=(cards,log,roundNum,p3Hand,))
+                 p3Thread.start()
+                 p1Thread = threading.Thread(group=None, target=player1, name='player1', args=(cards,log,roundNum,p1Hand,))
+                 p1Thread.start()
+                 p2Thread = threading.Thread(group=None, target=player2, name='player2', args=(cards,log,roundNum,p2Hand,))
+                 p2Thread.start()
+                 player1
             roundNum += 1
 
             while p1Thread.isAlive() or p2Thread.isAlive() or p3Thread.isAlive():   #Checks if any player threads running
-                print("Awaiting Player Threads")                                    #if threads are running it waits before
-                                                                                    #queueing more overlapping work
+                print("Awaiting Threads")
+                #queueing more overlapping work
             log.write("\n\nCURRENT DECK: \n")
             for z in cards:
                 log.write(str(z))
             log.write("\n\n")
-            win -= 1
+            if winner == False:
+                win = 1
+                winner = True
