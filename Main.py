@@ -147,8 +147,8 @@ if __name__ == '__main__':
                 if winner:  #Checks if flag set, if not player plays
                     p3Thread = threading.Thread(group=None, target=player3, name='player3', args=(cards,log,roundNum,p3Hand,))
                     p3Thread.start()
-                #if winner:
-                    #i += 1
+                if not winner:
+                    win = 0
 
 #            if i == 1:
 #                p2Thread = threading.Thread(group=None, target=player2, name='player2', args=(cards,log,roundNum,p2Hand,))
@@ -168,6 +168,7 @@ if __name__ == '__main__':
             roundNum += 1
 
             while p1Thread.isAlive() or p2Thread.isAlive() or p3Thread.isAlive():   #Checks if any player threads running
+                print("Awaiting Player Threads")                                    #if threads are running it waits before
                                                                                     #queueing more overlapping work
             log.write("\n\nCURRENT DECK: \n")
             for z in cards:
