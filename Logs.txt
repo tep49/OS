@@ -1,0 +1,85 @@
+Player 1 gets 4 of Club from the dealer
+Player 2 gets 6 of Spade from the dealer
+Player 3 gets 2 of Club from the dealer
+
+
+CURRENT DECK: 
+(4, 'Heart')(7, 'Club')(4, 'Spade')(12, 'Heart')(8, 'Heart')(1, 'Heart')(11, 'Diamond')(9, 'Club')(12, 'Club')(13, 'Spade')(9, 'Diamond')(10, 'Heart')(11, 'Club')(10, 'Diamond')(8, 'Spade')(9, 'Spade')(6, 'Diamond')(1, 'Club')(3, 'Diamond')(10, 'Spade')(7, 'Spade')(12, 'Diamond')(2, 'Heart')(9, 'Heart')(2, 'Spade')(13, 'Club')(8, 'Diamond')(1, 'Diamond')(4, 'Diamond')(5, 'Club')(3, 'Club')(7, 'Heart')(10, 'Club')(8, 'Club')(12, 'Spade')(6, 'Heart')(11, 'Spade')(5, 'Diamond')(3, 'Heart')(13, 'Diamond')(6, 'Club')(1, 'Spade')(5, 'Heart')(13, 'Heart')(2, 'Diamond')(3, 'Spade')(5, 'Spade')(7, 'Diamond')(11, 'Heart')
+
+Player 1 draws: (4, 'Heart')
+Player 1 Hand: (4, 'Club') (4, 'Heart') 
+
+
+Player 1 wins and exits
+
+Player 2 draws: (7, 'Club')
+Player 2 Hand: (6, 'Spade') (7, 'Club') 
+Player 2 discards: (7, 'Club')
+
+Player 3 draws: (4, 'Spade')
+Player 3 Hand: (2, 'Club') (4, 'Spade') 
+Player 3 discards: (4, 'Spade')
+
+
+
+CURRENT DECK: 
+(12, 'Heart')(8, 'Heart')(1, 'Heart')(11, 'Diamond')(9, 'Club')(12, 'Club')(13, 'Spade')(9, 'Diamond')(10, 'Heart')(11, 'Club')(10, 'Diamond')(8, 'Spade')(9, 'Spade')(6, 'Diamond')(1, 'Club')(3, 'Diamond')(10, 'Spade')(7, 'Spade')(12, 'Diamond')(2, 'Heart')(9, 'Heart')(2, 'Spade')(13, 'Club')(8, 'Diamond')(1, 'Diamond')(4, 'Diamond')(5, 'Club')(3, 'Club')(7, 'Heart')(10, 'Club')(8, 'Club')(12, 'Spade')(6, 'Heart')(11, 'Spade')(5, 'Diamond')(3, 'Heart')(13, 'Diamond')(6, 'Club')(1, 'Spade')(5, 'Heart')(13, 'Heart')(2, 'Diamond')(3, 'Spade')(5, 'Spade')(7, 'Diamond')(11, 'Heart')(6, 'Spade')(2, 'Club')
+
+Player 2 draws: (12, 'Heart')
+Player 2 Hand: (7, 'Club') (12, 'Heart') 
+Player 2 discards: (12, 'Heart')
+
+Player 3 draws: (8, 'Heart')
+Player 3 Hand: (4, 'Spade') (8, 'Heart') 
+Player 3 discards: (8, 'Heart')
+
+
+
+CURRENT DECK: 
+(1, 'Heart')(11, 'Diamond')(9, 'Club')(12, 'Club')(13, 'Spade')(9, 'Diamond')(10, 'Heart')(11, 'Club')(10, 'Diamond')(8, 'Spade')(9, 'Spade')(6, 'Diamond')(1, 'Club')(3, 'Diamond')(10, 'Spade')(7, 'Spade')(12, 'Diamond')(2, 'Heart')(9, 'Heart')(2, 'Spade')(13, 'Club')(8, 'Diamond')(1, 'Diamond')(4, 'Diamond')(5, 'Club')(3, 'Club')(7, 'Heart')(10, 'Club')(8, 'Club')(12, 'Spade')(6, 'Heart')(11, 'Spade')(5, 'Diamond')(3, 'Heart')(13, 'Diamond')(6, 'Club')(1, 'Spade')(5, 'Heart')(13, 'Heart')(2, 'Diamond')(3, 'Spade')(5, 'Spade')(7, 'Diamond')(11, 'Heart')(6, 'Spade')(2, 'Club')(7, 'Club')(4, 'Spade')
+
+Player 2 draws: (1, 'Heart')
+Player 2 Hand: (12, 'Heart') (1, 'Heart') 
+Player 2 discards: (1, 'Heart')
+
+Player 3 draws: (11, 'Diamond')
+Player 3 Hand: (8, 'Heart') (11, 'Diamond') 
+Player 3 discards: (11, 'Diamond')
+
+
+
+CURRENT DECK: 
+(9, 'Club')(12, 'Club')(13, 'Spade')(9, 'Diamond')(10, 'Heart')(11, 'Club')(10, 'Diamond')(8, 'Spade')(9, 'Spade')(6, 'Diamond')(1, 'Club')(3, 'Diamond')(10, 'Spade')(7, 'Spade')(12, 'Diamond')(2, 'Heart')(9, 'Heart')(2, 'Spade')(13, 'Club')(8, 'Diamond')(1, 'Diamond')(4, 'Diamond')(5, 'Club')(3, 'Club')(7, 'Heart')(10, 'Club')(8, 'Club')(12, 'Spade')(6, 'Heart')(11, 'Spade')(5, 'Diamond')(3, 'Heart')(13, 'Diamond')(6, 'Club')(1, 'Spade')(5, 'Heart')(13, 'Heart')(2, 'Diamond')(3, 'Spade')(5, 'Spade')(7, 'Diamond')(11, 'Heart')(6, 'Spade')(2, 'Club')(7, 'Club')(4, 'Spade')(12, 'Heart')(8, 'Heart')
+
+Player 2 draws: (9, 'Club')
+Player 2 Hand: (1, 'Heart') (9, 'Club') 
+Player 2 discards: (9, 'Club')
+
+Player 3 draws: (12, 'Club')
+Player 3 Hand: (11, 'Diamond') (12, 'Club') 
+Player 3 discards: (12, 'Club')
+
+
+
+CURRENT DECK: 
+(13, 'Spade')(9, 'Diamond')(10, 'Heart')(11, 'Club')(10, 'Diamond')(8, 'Spade')(9, 'Spade')(6, 'Diamond')(1, 'Club')(3, 'Diamond')(10, 'Spade')(7, 'Spade')(12, 'Diamond')(2, 'Heart')(9, 'Heart')(2, 'Spade')(13, 'Club')(8, 'Diamond')(1, 'Diamond')(4, 'Diamond')(5, 'Club')(3, 'Club')(7, 'Heart')(10, 'Club')(8, 'Club')(12, 'Spade')(6, 'Heart')(11, 'Spade')(5, 'Diamond')(3, 'Heart')(13, 'Diamond')(6, 'Club')(1, 'Spade')(5, 'Heart')(13, 'Heart')(2, 'Diamond')(3, 'Spade')(5, 'Spade')(7, 'Diamond')(11, 'Heart')(6, 'Spade')(2, 'Club')(7, 'Club')(4, 'Spade')(12, 'Heart')(8, 'Heart')(1, 'Heart')(11, 'Diamond')
+
+Player 2 draws: (13, 'Spade')
+Player 2 Hand: (9, 'Club') (13, 'Spade') 
+Player 2 discards: (13, 'Spade')
+
+Player 3 draws: (9, 'Diamond')
+Player 3 Hand: (12, 'Club') (9, 'Diamond') 
+Player 3 discards: (9, 'Diamond')
+
+
+
+CURRENT DECK: 
+(10, 'Heart')(11, 'Club')(10, 'Diamond')(8, 'Spade')(9, 'Spade')(6, 'Diamond')(1, 'Club')(3, 'Diamond')(10, 'Spade')(7, 'Spade')(12, 'Diamond')(2, 'Heart')(9, 'Heart')(2, 'Spade')(13, 'Club')(8, 'Diamond')(1, 'Diamond')(4, 'Diamond')(5, 'Club')(3, 'Club')(7, 'Heart')(10, 'Club')(8, 'Club')(12, 'Spade')(6, 'Heart')(11, 'Spade')(5, 'Diamond')(3, 'Heart')(13, 'Diamond')(6, 'Club')(1, 'Spade')(5, 'Heart')(13, 'Heart')(2, 'Diamond')(3, 'Spade')(5, 'Spade')(7, 'Diamond')(11, 'Heart')(6, 'Spade')(2, 'Club')(7, 'Club')(4, 'Spade')(12, 'Heart')(8, 'Heart')(1, 'Heart')(11, 'Diamond')(9, 'Club')(12, 'Club')
+
+Player 2 gets 1 of Club from the dealer
+Player 3 gets 13 of Heart from the dealer
+Player 1 gets 12 of Spade from the dealer
+Player 3 gets 10 of Spade from the dealer
+Player 1 gets 6 of Spade from the dealer
+Player 2 gets 9 of Heart from the dealer
